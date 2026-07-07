@@ -1,4 +1,4 @@
-SELECT DISTINCT categoria.descricao
+SELECT DISTINCT categoria.descricao -- seleciona so que sem repetições
 FROM categoria
 JOIN produto
 ON categoria.idcategoria = produto.idcategoria

@@ -6,4 +6,4 @@ JOIN produto
 ON venda_has_produto.idproduto = produto.idproduto
 JOIN categoria
 ON produto.idcategoria = categoria.idcategoria
-WHERE categoria.descricao <> 'Higiene pessoal';
+WHERE categoria.descricao <> 'Higiene pessoal'; -- 'diferente de'
