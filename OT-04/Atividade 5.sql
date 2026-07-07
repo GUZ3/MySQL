@@ -1,0 +1,7 @@
+SELECT AVG(produto.preco * venda_has_produto.quantidade) AS media_produtos
+FROM vendas
+JOIN venda_has_produto
+ON vendas.idvenda = venda_has_produto.idvenda
+JOIN produto
+ON venda_has_produto.idproduto = produto.idproduto
+WHERE vendas.data_venda = '2021-01-23';
